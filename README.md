@@ -1,1 +1,3 @@
-# structural_microeconometrics
+# Structural Microeconometrics
+
+Repository containing material for the structural microeconometrics class. 
