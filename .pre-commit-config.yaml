@@ -4,5 +4,8 @@ repos:
     hooks:
     -   id: clang-format
     -   id: cpplint
-        args: [--filter=-legal/copyright]
+        args: [
+            '--filter=-legal/copyright, 
+            -runtime/references' # Disable warning: 'Is this a non-const reference? If so, make const or use a pointer'
+        ]
     -   id: cppcheck
