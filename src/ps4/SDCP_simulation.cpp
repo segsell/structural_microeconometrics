@@ -1,5 +1,6 @@
 /*
-Problem Set 4: Discrete Choice Dynamic Programming Models
+Problem Set 4: Static Discrete Choice Problem (SDCP)
+Static Model of Female Labor Supply
 
 I) Simulate the model for female labor market participation from class
 */

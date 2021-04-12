@@ -1,5 +1,6 @@
 /*
-Problem Set 4: Discrete Choice Dynamic Programming Models
+Problem Set 4: Static Discrete Choice Problem (SDCP)
+Static Model of Female Labor Supply
 
 II) Estimate the model of female labor market participation
 via maximum likelihood using the simulated data from part I
