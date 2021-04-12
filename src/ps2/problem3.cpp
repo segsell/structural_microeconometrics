@@ -1,4 +1,6 @@
 /*
+Problem Set 2
+
 Estimate probit using NLopt:
 http://ab-initio.mit.edu/wiki/index.php/NLopt_Reference#The_nlopt_opt_obje
 
@@ -76,18 +78,15 @@ int main() {
   std::clock_t start;
   double duration;
   /*
-  Set up the optimizer and minimize the likelihood
+  Set up the optimizer and minimize the likelihood.
   - LN_COBYLA is a gradient-free optimizer.
   - LN_SBPLX : Subplex (a variant of Nelder-Mead that uses Nelder-Mead on a
-  sequence of subspaces) LN_COBYLA GN_DIRECT_L: DIviding RECTangles algorithm
+  sequence of subspaces)
+  - LN_COBYLA GN_DIRECT_L: DIviding RECTangles algorithm
   for global optimization
   */
   // nlopt::opt opt(nlopt::LN_SBPLX, nparam);
   nlopt::opt opt(nlopt::LN_COBYLA, nparam);
-
-  // Give it some guidance about the size of the initial step
-  //    vector<double> initialstep(2,0.1);
-  //    opt.set_initial_step(initialstep);
 
   /*
   If there are no bounds on parameters, then this is not necessary.
@@ -113,7 +112,6 @@ int main() {
 
   // Here we can change settings of the optimizer
   // opt.set_maxeval(nobs);
-  // opt.set_xtol_rel(1.0e-10);
   opt.set_xtol_rel(1.0e-8);
 
   // Create variables containing the parameters and value of objective function

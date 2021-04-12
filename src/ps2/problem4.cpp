@@ -1,4 +1,6 @@
 /*
+Problem Set 2
+
 Estimate probit using NLopt:
 http://ab-initio.mit.edu/wiki/index.php/NLopt_Reference#The_nlopt_opt_obje
 
@@ -51,12 +53,13 @@ int main() {
   double duration;
 
   /*
-  Here we set up the optimizer and minimize the likelihood
-  LN_COBYLA is a gradient-free optimizer
-  LD_MMA : Gradient based
-  LD_LBFGS : Gradient based
-  LN_SBPLX : Subplex (a variant of Nelder-Mead that uses Nelder-Mead on a
-  sequence of subspaces) LN_COBYLA GN_DIRECT_L: DIviding RECTangles algorithm
+  Here we set up the optimizer and minimize the likelihood.
+  - LN_COBYLA is a gradient-free optimizer
+  - LD_MMA : Gradient based
+  - LD_LBFGS : Gradient based
+  - LN_SBPLX : Subplex (a variant of Nelder-Mead that uses Nelder-Mead on a
+   sequence of subspaces)
+  - LN_COBYLA GN_DIRECT_L: DIviding RECTangles algorithm
   for global optimization
   */
 
